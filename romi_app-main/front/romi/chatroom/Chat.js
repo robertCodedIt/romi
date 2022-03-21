@@ -45,7 +45,7 @@ class Chat extends Component {
     
     // be sure to add the ip address in the http request
    
-    this.socket = io("http://2601:3c7:4202:37e0:ecf5:e270:647c:1bfd:3000");
+    this.socket = io("http://2601:3c7:4202:37e0:5d46:550d:ece:1da9:3000");
     this.socket.on("chat message", (msg) => {
       this.setState({ allMessages: [...this.state.allMessages, msg] });
     });

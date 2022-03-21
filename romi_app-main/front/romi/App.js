@@ -1,7 +1,8 @@
 import React from "react";
 import { View } from "react-native";
+import Chat from './chatroom/Chat'
 // import HomeScreen from "./screens/HomeScreen"
-import RomiApp from "./appFolder/RomiApp";
+// import RomiApp from "./appFolder/RomiApp";
 import UserSignIn from "./screens/UserSignIn";
 import HomeScreen from "./screens/HomeScreen";
 import { NavigationContainer } from "@react-navigation/native";
@@ -21,6 +22,11 @@ export default function App() {
           options={{ headerShown: false }}
           name="Home"
           component={HomeScreen}
+        ></Stack.Screen>
+        <Stack.Screen
+          options={{ headerShown: true }}
+          name="ChatRoom"
+          component={Chat}
         ></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>

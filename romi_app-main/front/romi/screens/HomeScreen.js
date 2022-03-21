@@ -24,6 +24,9 @@ function HomeScreen () {
               <Button mode="contained" onPress={() => navigation.navigate('Login')}>
                 Go!
               </Button>
+              <Button mode="contained" onPress={() => navigation.navigate('ChatRoom')}>
+                Chat!
+              </Button>
               <Button mode="contained" onPress={() => {handleLogout()}}>
                 Logout!
               </Button>

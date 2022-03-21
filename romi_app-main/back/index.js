@@ -17,6 +17,7 @@ const io = new Server(server);
 // });
 // connect websockets
 io.on('connection', (socket) => {
+  console.log('hello')
   chatMessage.find().then((result) =>{socket.emit('output-message',result)})
   console.log('a user connected',socket.id);
   socket.on("chat message",(msg)=>{
